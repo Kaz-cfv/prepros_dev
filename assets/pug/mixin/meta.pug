@@ -1,0 +1,4 @@
+mixin meta(_meta_)
+  title #{_meta_.title}
+  link(rel="canonical", href=`${_meta_.canonical || ''}`)
+  meta(name="description", content=`${_meta_.description}`)

@@ -1,0 +1,21 @@
+doctype html
+html(lang="ja")
+  head
+    include ../assets/pug/elements/head-property
+    include ../assets/pug/elements/head-assets
+    +headAssets('top')
+    include ../assets/pug/mixin/meta
+    +meta({
+      title: 'website title'
+    })
+
+  body.p-top
+    include ../assets/pug/elements/body-preppend
+    +bodyPreppend('top')
+    include ../assets/pug/elements/header
+
+    main.l-main
+
+    include ../assets/pug/elements/footer
+    include ../assets/pug/elements/body-append
+    +bodyAppend('top')
